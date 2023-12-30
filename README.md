@@ -1,73 +1,83 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Basketball-API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Welcome to the `basketball-api` project! This API is designed to provide comprehensive data and functionalities related to basketball games, players, teams, and statistics. Built with Nest.js, Prisma, TypeScript, and SQLite, this project offers a robust, scalable, and type-safe backend solution.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Features
 
-## Description
+- **Team Management:** Create, update, and delete basketball teams.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Future features
 
-## Installation
+- **Player Profiles:** Manage player information including stats, team affiliations, and personal details.
+- **Game Records:** Record and retrieve details of basketball games, including scores, locations, and dates.
+- **Statistical Analysis:** Access detailed statistics for players and teams.
+- **User Authentication:** Secure user authentication for managing data.
 
-```bash
-$ pnpm install
-```
+## Getting Started
 
-## Running the app
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
-# development
-$ pnpm run start
+### Prerequisites
 
-# watch mode
-$ pnpm run start:dev
+- Node.js
+- TypeScript
+- SQLite
 
-# production mode
-$ pnpm run start:prod
-```
+### Installation
 
-## Test
+1. **Clone the repository:**
 
-```bash
-# unit tests
-$ pnpm run test
+   ```bash
+   git clone https://github.com/your-username/basketball-api.git
+   cd basketball-api
+   ```
 
-# e2e tests
-$ pnpm run test:e2e
+2. **Install dependencies:**
 
-# test coverage
-$ pnpm run test:cov
-```
+   ```bash
+   pnpm install
+   ```
 
-## Support
+3. **Set up the database:**
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+   The project uses SQLite, which requires no additional setup for a basic configuration.
 
-## Stay in touch
+4. **Run the application:**
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+   ```bash
+   pnpm run start:dev
+   ```
+
+   This will start the server on `http://localhost:3000`.
+
+## Usage
+
+The API provides several endpoints for managing basketball data:
+
+- `/basketball-teams`: Manage basketball teams.
+
+## Future usage
+- `/players`: Handle player information.
+- `/games`: Record and retrieve game details.
+- `/stats`: Access statistical data.
+
+For detailed API documentation, visit `http://localhost:3000/api`.
+
+
+## Built With
+
+- [Nest.js](https://nestjs.com/) - A progressive Node.js framework for building efficient and scalable server-side applications.
+- [Prisma](https://www.prisma.io/) - Next-generation ORM for Node.js and TypeScript.
+- [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
+- [SQLite](https://www.sqlite.org/index.html) - A C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
+
+
+## Authors
+
+- **Samed Skulj** - *Initial work* - [YourUsername](https://github.com/samedskulj)
+
+See also the list of [contributors](https://github.com/your-username/basketball-api/contributors) who participated in this project.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
